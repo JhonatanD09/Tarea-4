@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./public/miestilo.css">
     <title>Document</title>
 </head>
 <body class= "" >
@@ -12,22 +13,21 @@
         <div class = 'bg-blue-100 mt-8 '> 
             <form class="flex bg-local grid gap-3 grid-cols-1 my-24 mx-20" action="/" method="POST">
                 <h1 class="text-5xl" >Registro</h1>
-                <input class="w-full  text-black   rounded py-3 px-4 mb-3 " placeholder="Nombre" name="name"> 
-                <input class="w-full  text-black   rounded py-3 px-4 mb-3 " placeholder="Precio" name="price">
+                <input class="w-full text-black   rounded py-3 px-4 mb-3 " id = "input"  placeholder="Nombre" name="name"> 
+                <input class="w-full  text-black   rounded py-3 px-4 mb-3 " id = "input" placeholder="Precio" name="price">
                 <button class="bg-blue-500 hover:bg-blue-400 text-3xl" id="myBtn" type="submit" > Enviar </button>
             </form>
        </div>
     </div>
-    <div class="mt-8 ml-100 ">
-        <button class="bg-blue-500 mt-8 ml-96 hover:bg-blue-400 text-3xl w-48" id= "myBtnShow">Mostrar</button>
-        <table class="table-auto" >
+    <div class="show">
+        <button class="bg-blue-500 mt-8 ml-96 hover:bg-blue-400 text-3xl mx-10" id= "myBtnShow">Mostrar</button>
+        <table class="table" >
             <thead>
                 <tr>
                   <th class="w-1/2 border-solid border-4 border-light-blue-500 ...">Nombre</th>
                   <th class="w-1/4 border-solid border-4 border-light-blue-500 ...">Precio</th>
                 </tr>
-                <tbody id="test">
-                    
+                <tbody id="test"> 
                 </tbody>
               </thead>
         </table>

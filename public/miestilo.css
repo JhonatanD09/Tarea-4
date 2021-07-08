@@ -1,0 +1,14 @@
+.show{
+    display: block;
+    margin-top: 40px;
+    margin-left: 500px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.table{
+    margin-top: 50px;
+    margin-left: 330px;
+    margin-right: 10px;
+    position: relative;
+}

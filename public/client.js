@@ -8,6 +8,7 @@ function getProduct(){
             const data = JSON.parse(xhttp.responseText)
             let table = document.getElementById("test")
             table.innerHTML = ''
+            document.getElementById("input").innerHTML= ''
             for(i in data.products){
                 let tr = document.createElement("TR")
                 tr.class= "border-solid border-4 border-light-blue-500 ..."
